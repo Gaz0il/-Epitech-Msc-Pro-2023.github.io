@@ -9,12 +9,12 @@ pipelines:
   default:
     - parallel:
       - step:
-        -run-on:
+        run-on:
           - self.hosted
           - linux
-            name: 'Build and Test'
-            script:
-              - echo "Your build and test goes here..."
+          name: 'Build and Test'
+          script:
+            - echo "Your build and test goes here..."
       - step:
           name: 'Lint'
           script:
