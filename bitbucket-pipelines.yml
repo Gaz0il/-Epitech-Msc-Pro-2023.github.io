@@ -8,7 +8,7 @@ pipelines:
   default:
     - step:
         script:
-          - git push --mirror git@github.com:https://github.com/Gaz0il/-Epitech-Msc-Pro-2023.github.io.git
+          - git push --mirror git@github.com:Gaz0il/-Epitech-Msc-Pro-2023.github.io.git
     - parallel:
       - step:
           name: 'Build and Test'
